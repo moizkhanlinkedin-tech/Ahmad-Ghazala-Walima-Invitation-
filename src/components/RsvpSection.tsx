@@ -51,7 +51,7 @@ export const RsvpSection: React.FC = () => {
             <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-[#C5A059] to-transparent mx-auto my-5" />
 
             <p className="text-xs sm:text-sm text-[#5E7268] font-cormorant italic">
-              Ahmad Khan &amp; Ghazala Aslam · Barat Ceremony · Lahore Cantt
+              Ahmad Khan &amp; Ghazala Aslam · Walima Ceremony · Lahore Cantt
             </p>
           </div>
         </ScrollReveal>
@@ -88,7 +88,7 @@ export const RsvpSection: React.FC = () => {
 
                 <a
                   href={`https://wa.me/923004738429?text=${encodeURIComponent(
-                    "Salam! Wishing immense happiness and blessings to Ahmad Khan & Ghazala Aslam. I am reaching out to confirm attendance for the Barat ceremony on Saturday, 28th November 2026."
+                    "Salam! Wishing immense happiness and blessings to Ahmad Khan & Ghazala Aslam. I am reaching out to confirm attendance for the Walima ceremony on Sunday, 29th November 2026."
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -131,7 +131,7 @@ export const RsvpSection: React.FC = () => {
 
                 <a
                   href={`https://wa.me/923078866645?text=${encodeURIComponent(
-                    "Salam! Wishing immense happiness and blessings to Ahmad Khan & Ghazala Aslam. I am reaching out to confirm attendance for the Barat ceremony on Saturday, 28th November 2026."
+                    "Salam! Wishing immense happiness and blessings to Ahmad Khan & Ghazala Aslam. I am reaching out to confirm attendance for the Walima ceremony on Sunday, 29th November 2026."
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"

@@ -46,7 +46,7 @@ export default function App() {
         {/* Section 3: Live Dual Countdown Timer */}
         <CountdownSection />
 
-        {/* Section 4: Event Details ("Barat Ceremony") */}
+        {/* Section 4: Event Details ("Walima Ceremony") */}
         <EventDetailsSection />
 
         {/* Section 5: Venues, Google Maps & Navigation */}

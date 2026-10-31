@@ -1,11 +1,11 @@
 /**
  * Wedding Event Details & Calendar Utilities
  * Ahmad Khan & Ghazala Aslam Wedding
- * Barat: Saturday, 28th November 2026
+ * Walima: Sunday, 29th November 2026
  */
 
 export interface EventDetail {
-  id: 'barat';
+  id: 'walima';
   title: string;
   ceremonyName: string;
   dateDisplay: string;
@@ -28,7 +28,7 @@ export const WEDDING_DATA = {
   monogram: "A & G",
   bismillahArabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
   invitationIntro: "In the name of Allah, the Most Beneficent, the Most Merciful",
-  familyIntro: "Together with their respected families, cordially invite you to celebrate the joyous Barat ceremony of their beloved",
+  familyIntro: "Together with their respected families, cordially invite you to celebrate the joyous Walima ceremony of their beloved",
   rsvpTitle: "All Family Members, Cousins, Brothers & Sisters",
   contacts: [
     {
@@ -43,23 +43,23 @@ export const WEDDING_DATA = {
     },
   ],
   events: {
-    barat: {
-      id: "barat",
-      title: "Barat Ceremony — Ahmad Khan & Ghazala Aslam",
-      ceremonyName: "Barat Ceremony",
-      dateDisplay: "Saturday, 28th November 2026",
-      dateIso: "2026-11-28",
-      // PKT is UTC+5. 12:00 PM PKT = 07:00 UTC. 5:00 PM PKT = 12:00 UTC.
-      startUtc: "20261128T070000Z",
-      endUtc: "20261128T120000Z",
-      targetDateIso: "2026-11-28T12:00:00+05:00",
+    walima: {
+      id: "walima",
+      title: "Walima Ceremony — Ahmad Khan & Ghazala Aslam",
+      ceremonyName: "Walima Ceremony",
+      dateDisplay: "Sunday, 29th November 2026",
+      dateIso: "2026-11-29",
+      // PKT is UTC+5. 12:00 PM PKT = 07:00 UTC. 4:00 PM PKT = 11:00 UTC.
+      startUtc: "20261129T070000Z",
+      endUtc: "20261129T110000Z",
+      targetDateIso: "2026-11-29T12:00:00+05:00",
       timings: {
-        highlight1: { label: "Sehra Bandi", time: "12:00 PM" },
-        highlight2: { label: "Departure", time: "1:00 PM" },
+        highlight1: { label: "Reception", time: "12:00 PM" },
+        highlight2: { label: "Lunch", time: "1:00 PM" },
       },
-      venueName: "Arifabad Tall wali Street",
-      venueAddress: "Arifabad Tall wali Street, Bhata Chowk, Bedian Road, Lahore Cantt.",
-      mapsSearchUrl: "https://www.google.com/maps/search/?api=1&query=Arifabad+Bhata+Chowk+Bedian+Road+Lahore+Cantt",
+      venueName: "Royal Palace Banquet Hall",
+      venueAddress: "Royal Palace Banquet Hall, Near Ali View Garden, Bedian Road, Lahore Cantt.",
+      mapsSearchUrl: "https://www.google.com/maps/search/?api=1&query=Royal+Palace+Banquet+Hall+Bedian+Road+Lahore+Cantt",
     } as EventDetail,
   },
 };

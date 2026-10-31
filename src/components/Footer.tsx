@@ -25,19 +25,19 @@ export const Footer: React.FC<FooterProps> = ({ onReopenOverlay }) => {
         </h3>
 
         <p className="text-xs sm:text-sm font-sans uppercase tracking-[0.25em] text-[#C5A059] mb-6 font-semibold">
-          Barat Celebration · Lahore Cantt, Pakistan
+          Walima Celebration · Lahore Cantt, Pakistan
         </p>
 
         {/* Date, Time, Location Summary */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-[#5E7268] mb-8">
           <span className="inline-flex items-center gap-1.5 text-[#2C3E35] font-medium">
             <Calendar className="w-3.5 h-3.5 text-[#0A3D2E]" />
-            Barat: Sat, 28 Nov 2026 (12:00 PM)
+            Walima: Sun, 29 Nov 2026 (12:00 PM)
           </span>
           <span aria-hidden="true" className="text-[#C5A059]">•</span>
           <span className="inline-flex items-center gap-1.5 text-[#2C3E35] font-medium">
             <MapPin className="w-3.5 h-3.5 text-[#0A3D2E]" />
-            Bedian Road, Lahore Cantt.
+            Royal Palace Banquet Hall, Bedian Road
           </span>
         </div>
 

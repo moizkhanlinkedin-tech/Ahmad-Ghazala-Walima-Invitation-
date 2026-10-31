@@ -49,7 +49,7 @@ export const HeroSection: React.FC = () => {
         {/* Family Greeting */}
         <ScrollReveal delayMs={250} direction="up">
           <p className="max-w-xl text-sm sm:text-base text-[#5E7268] font-cormorant italic leading-relaxed mb-6 text-balance">
-            “Together with their families, cordially invite you to celebrate the joyous Barat ceremony of”
+            “Together with their families, cordially invite you to celebrate the joyous Walima ceremony of”
           </p>
         </ScrollReveal>
 
@@ -73,24 +73,24 @@ export const HeroSection: React.FC = () => {
         {/* Ceremony Highlight Badge Banner */}
         <ScrollReveal delayMs={450} direction="up">
           <div className="mt-8 mb-10 w-full max-w-xl mx-auto">
-            {/* Event Quick Banner: Barat */}
+            {/* Event Quick Banner: Walima */}
             <div className="bg-[#082E23] rounded-2xl p-6 sm:p-7 border-2 border-[#D4AF37]/50 shadow-xl relative overflow-hidden group hover:border-[#D4AF37] transition-all duration-300 text-left">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-[10px] font-sans uppercase tracking-[0.25em] text-[#F3E5AB] font-semibold bg-[#125A44] px-3 py-1 rounded-full border border-[#D4AF37]/40">
                   The Auspicious Occasion
                 </span>
-                <span className="text-xs font-serif text-[#DFC285]">Saturday</span>
+                <span className="text-xs font-serif text-[#DFC285]">Sunday</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-serif text-[#FFF2B2] font-semibold mb-2">
-                BARAT CEREMONY
+                WALIMA CEREMONY
               </h3>
               <div className="text-sm sm:text-base font-medium text-[#E6DEC8] flex items-center gap-2 mb-2">
                 <Calendar className="w-4 h-4 text-[#D4AF37]" />
-                <span>28th November 2026</span>
+                <span>29th November 2026</span>
               </div>
               <div className="text-xs sm:text-sm text-[#DFC285] flex items-center gap-2">
                 <Clock className="w-4 h-4 text-[#D4AF37]" />
-                <span>Sehra Bandi: 12:00 PM · Departure: 1:00 PM</span>
+                <span>Reception: 12:00 PM · Lunch: 1:00 PM</span>
               </div>
             </div>
           </div>
@@ -145,13 +145,13 @@ export const HeroSection: React.FC = () => {
             <div className="w-full mt-4 sm:mt-5 p-4 sm:p-5 rounded-2xl bg-white/95 backdrop-blur-sm border-2 border-[#C5A059]/40 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left transition-all duration-300 hover:border-[#C5A059]">
               <div className="flex-1">
                 <span className="text-[10px] sm:text-[11px] font-sans uppercase tracking-[0.25em] text-[#C5A059] block font-semibold">
-                  Barat Ceremony
+                  Walima Ceremony
                 </span>
                 <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#0A3D2E] mt-0.5 tracking-tight">
                   Ahmad &amp; Ghazala · A &amp; G
                 </h3>
                 <p className="text-xs sm:text-sm text-[#5E7268] font-medium mt-1">
-                  Saturday, 28th November 2026 • Lahore, Pakistan
+                  Sunday, 29th November 2026 • Lahore, Pakistan
                 </p>
               </div>
 

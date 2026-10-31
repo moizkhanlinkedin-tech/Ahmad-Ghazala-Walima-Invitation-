@@ -11,7 +11,7 @@ interface TimeLeft {
 }
 
 export const CountdownSection: React.FC = () => {
-  const barat: EventDetail = WEDDING_DATA.events.barat;
+  const walima: EventDetail = WEDDING_DATA.events.walima;
 
   const calculateTimeLeft = (targetIso: string): TimeLeft => {
     const targetTimestamp = new Date(targetIso).getTime();
@@ -28,16 +28,16 @@ export const CountdownSection: React.FC = () => {
   };
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(() =>
-    calculateTimeLeft(barat.targetDateIso)
+    calculateTimeLeft(walima.targetDateIso)
   );
 
   useEffect(() => {
-    setTimeLeft(calculateTimeLeft(barat.targetDateIso));
+    setTimeLeft(calculateTimeLeft(walima.targetDateIso));
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft(barat.targetDateIso));
+      setTimeLeft(calculateTimeLeft(walima.targetDateIso));
     }, 1000);
     return () => clearInterval(timer);
-  }, [barat.targetDateIso]);
+  }, [walima.targetDateIso]);
 
   const timeUnits = [
     { label: 'Days', value: timeLeft.days },
@@ -59,16 +59,16 @@ export const CountdownSection: React.FC = () => {
           </span>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#0A3D2E] font-normal tracking-tight mb-4">
-            The Auspicious Barat Begins In
+            The Auspicious Walima Begins In
           </h2>
 
           <p className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#C5A059] mb-4 font-semibold">
-            Lahore, Pakistan · {barat.dateDisplay}
+            Lahore, Pakistan · {walima.dateDisplay}
           </p>
 
           <div className="mb-8">
             <span className="text-sm sm:text-base font-serif text-[#0A3D2E] font-medium bg-white/80 px-5 py-2 rounded-full border border-[#C5A059]/40 shadow-xs inline-block">
-              {barat.ceremonyName}: {barat.timings.highlight1.label} at {barat.timings.highlight1.time}
+              {walima.ceremonyName}: {walima.timings.highlight1.label} at {walima.timings.highlight1.time}
             </span>
           </div>
         </ScrollReveal>
@@ -107,18 +107,18 @@ export const CountdownSection: React.FC = () => {
         <ScrollReveal delayMs={600} direction="up">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href={getGoogleCalendarUrl(barat)}
+              href={getGoogleCalendarUrl(walima)}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#0A3D2E] hover:bg-[#125A44] text-[#FAF6F0] text-xs sm:text-sm font-semibold border border-[#C5A059]/60 shadow-md hover:-translate-y-0.5 hover:shadow-xl transition-all duration-200"
             >
               <Calendar className="w-4 h-4 text-[#DFC285]" />
-              <span>Add Barat to Google Calendar</span>
+              <span>Add Walima to Google Calendar</span>
               <ExternalLink className="w-3.5 h-3.5 opacity-70" />
             </a>
 
             <button
-              onClick={() => downloadIcsFile(barat)}
+              onClick={() => downloadIcsFile(walima)}
               type="button"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-[#FAF6F0] text-[#0A3D2E] text-xs sm:text-sm font-semibold border border-[#C5A059]/60 shadow-sm hover:border-[#0A3D2E] hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 cursor-pointer"
             >
